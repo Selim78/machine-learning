@@ -47,7 +47,7 @@ class LearningAgent(Agent):
             self.trials = 0 # number of trials
         else:
             self.trials += 1
-            self.epsilon = math.cos(0.01*self.trials)
+            self.epsilon = math.cos(0.01 * self.trials)
 
         return None
 
@@ -145,7 +145,7 @@ class LearningAgent(Agent):
         #   Use only the learning rate 'alpha' (do not use the discount factor 'gamma')
 
         self.Q[state][action] *= 1 - self.alpha
-        self.Q[state][action] += self.alpha * (reward + self.get_maxQ(state))
+        self.Q[state][action] += self.alpha * reward
         return
 
 

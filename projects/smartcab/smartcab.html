@@ -13152,7 +13152,7 @@ MzMzM6sRJ1hmZmZmZmY14gTLzMzMzMysRpxgmZmZmZmZ1cj/B1IuuerVe8a6AAAAAElFTkSuQmCC
 <p>Not appropriate:</p>
 <ul>
 <li>'deadline': we do not expect the cab to act differently according to the time it has left</li>
-<li>'left' and 'right': the cab doesn't have to mind the cars coming from the left/right since whenever the light is green those cars are supposed to remain idle</li>
+<li>'left' and 'right': a right turns on a red light is authorized. In that case, the cab needs to know the intended direction of the left traffic. But this situation is rare and its influence can be ignored. Additionally, whenever the light is green right and left traffic is supposed to remain idle.</li>
 </ul>
 
 </div>
@@ -16575,9 +16575,7 @@ b7bGZCeOAAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<ul>
-<li>The cab isn't rewarded for reaching it's target quickly. Therefore using future rewards might encourage it to take longer paths without it reaching its destination.</li>
-</ul>
+<p>The cab only has local information about the map and only knows where the next waypoint is. We don't, therefore, don't expect it to learn paths, but only how to behave in a crossroad given a set of inputs.</p>
 
 </div>
 </div>

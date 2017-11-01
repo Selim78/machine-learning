@@ -13154,6 +13154,7 @@ MzMzM6sRJ1hmZmZmZmY14gTLzMzMzMysRpxgmZmZmZmZ1cj/B1IuuerVe8a6AAAAAElFTkSuQmCC
 <li>'deadline': we do not expect the cab to act differently according to the time it has left</li>
 <li>'left' and 'right': a right turns on a red light is authorized. In that case, the cab needs to know the intended direction of the left traffic. But this situation is rare and its influence can be ignored. Additionally, whenever the light is green right and left traffic is supposed to remain idle.</li>
 </ul>
+<p>These last two feature would increase the complexity and the number of trials without adding much value.</p>
 
 </div>
 </div>
@@ -16575,7 +16576,12 @@ b7bGZCeOAAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>The cab only has local information about the map and only knows where the next waypoint is. We don't, therefore, don't expect it to learn paths, but only how to behave in a crossroad given a set of inputs.</p>
+<ol>
+<li><p>The cab only has local information about the map and only knows where the next waypoint is. We don't, therefore, don't expect it to learn paths, but only how to behave in a crossroad given a set of inputs.</p>
+</li>
+<li><p>Destinations change and we, therefore, don't want the cab to associate rewards with targets it has had to reach in previous trials.</p>
+</li>
+</ol>
 
 </div>
 </div>

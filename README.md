@@ -1,6 +1,6 @@
 # Projects submissions for Udacity's Machine Learning Nanodegree curriculum
 
-## Completed:
+## List of completed and validated projects:
 
 - **Predicting Boston Housing Prices** </br>
 Built a model to predict the value of a given house in the Boston real estate market using various statistical analysis tools. Identified the best price that a client can sell their house utilizing machine learning.</br>

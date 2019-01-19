@@ -1,4 +1,6 @@
-# Projects submissions for Udacity's Machine Learning Nanodegree curriculum
+# Machine Learning projects
+
+*Projects done as part of my [Machine Learning Nanodegree - Udacity](https://graduation.udacity.com/confirm/JDXDQGCG) - 2017*
 
 ## List of completed projects:
 
